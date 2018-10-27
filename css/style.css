@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@font-face {
+  font-family: "MuseoSans-300";
+  src: url("./fonts/MuseoSans-300.otf");
+}
+
+@font-face {
+  font-family: "MuseoSans-500";
+  src: url("./fonts/MuseoSans-500.otf");
+}
+
+@font-face {
+  font-family: "MuseoSans-700";
+  src: url("./fonts/MuseoSans-700.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next reg";
+  src: url("./fonts/avenir-next-regular.woff2");
+}
+
+@font-face {
+  font-family: "Avenir Next medium";
+  src: url("./fonts/avenir-next-medium.woff2");
+}
+
+@font-face {
+  font-family: "Avenir Next bold";
+  src: url("./fonts/avenir-next-bold.woff2");
+}
+
+@font-face {
+  font-family: "Sharp Sans bold";
+  src: url("./fonts/SharpSansNo1-Bold.otf");
+}
+
+@font-face {
+  font-family: "Bariol";
+  src: url("./fonts/bariol_regular-webfont.woff2");
+}
+
+@font-face {
+  font-family: "Anurati";
+  src: url("./fonts/Anurati-Regular.otf");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+.waves {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  width: inherit;
+  height: 100vh;
+  background: #fbfcee;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  -ms-flex-item-align: right;
+      -ms-grid-row-align: right;
+      align-self: right;
+  opacity: 0.4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #a1c3d1;
+  width: 152vh;
+  height: 152vh;
+  margin-left: -0px;
+  margin-top: -200px;
+  transform-ask: 50% 48%;
+  border-radius: 43%;
+  -webkit-animation: drift 3000ms infinite linear;
+          animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  -webkit-animation: drift 5000ms infinite linear;
+          animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  -webkit-animation: drift 7000ms infinite linear;
+          animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  background: #ad2e95;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b39bc8), color-stop(80%, rgba(241, 114, 161, 0)), to(rgba(240, 235, 244, 0.5)));
+  background: linear-gradient(to bottom, #b39bc8, rgba(241, 114, 161, 0) 80%, rgba(240, 235, 244, 0.5));
+  z-index: 11;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+  text-align: left;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.title #clean {
+  -webkit-text-fill-color: #f0ebf4;
+  font-family: "MuseoSans-700";
+}
+
+.title #main {
+  color: #3f63c5;
+  text-transform: capitalize;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 28vh;
+  padding-left: 10vw;
+  font-family: "Lobster", cursive;
+}
+
+.title #typinghero {
+  color: #b39bc8;
+  padding-left: 10vw;
+  text-transform: uppercase;
+  font-family: "MuseoSans-700";
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

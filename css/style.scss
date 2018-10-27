@@ -1,0 +1,162 @@
+//Import some fonts
+//Importing custom-fonts
+@font-face {
+  font-family: "MuseoSans-300";
+  src: url("./fonts/MuseoSans-300.otf");
+}
+
+@font-face {
+  font-family: "MuseoSans-500";
+  src: url("./fonts/MuseoSans-500.otf");
+}
+
+@font-face {
+  font-family: "MuseoSans-700";
+  src: url("./fonts/MuseoSans-700.otf");
+}
+
+@font-face {
+  font-family: "Avenir Next reg";
+  src: url("./fonts/avenir-next-regular.woff2");
+}
+
+@font-face {
+  font-family: "Avenir Next medium";
+  src: url("./fonts/avenir-next-medium.woff2");
+}
+
+@font-face {
+  font-family: "Avenir Next bold";
+  src: url("./fonts/avenir-next-bold.woff2");
+}
+
+@font-face {
+  font-family: "Sharp Sans bold";
+  src: url("./fonts/SharpSansNo1-Bold.otf");
+}
+@font-face {
+  font-family: "Bariol";
+  src: url("./fonts/bariol_regular-webfont.woff2");
+}
+@font-face {
+  font-family: "Anurati";
+  src: url("./fonts/Anurati-Regular.otf");
+}
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+//Variable declerations
+
+$backg: #a1c3d1; //bg
+$pastelpurple: #b39bc8; //pastel muted purple
+$nicewhite: #f0ebf4; //header text
+$pastelpink: #f172a1; //lighterpastel pink
+$poppink: #e64398; //pink
+$ultrapurpink: #ad2e95; //vibrant purpink
+$pastelblue: #3f63c5;
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+.waves {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: inherit;
+  height: 100vh;
+  background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  align-self: right;
+  opacity: 0.4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: $backg;
+  width: 152vh;
+  height: 152vh;
+  margin-left: -0px;
+  margin-top: -200px;
+  transform-ask: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  background: $ultrapurpink;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba($pastelpurple, 1),
+    rgba($pastelpink, 0) 80%,
+    rgba($nicewhite, 0.5)
+  );
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+  text-align: left;
+  transform: translate3d(0, 0, 0);
+  #clean {
+    -webkit-text-fill-color: $nicewhite;
+    font-family: "MuseoSans-700";
+  }
+  #main {
+    color: $pastelblue;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 0 rgba(black, 0.1);
+    //text-indent: 0.3em;
+    margin-top: 28vh;
+    padding-left: 10vw;
+    font-family: "Lobster", cursive;
+  }
+  #typinghero {
+    color: $pastelpurple;
+    padding-left: 10vw;
+    text-transform: uppercase;
+    font-family: "MuseoSans-700";
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}

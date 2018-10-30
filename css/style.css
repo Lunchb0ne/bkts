@@ -50,7 +50,7 @@ body {
 }
 
 html {
-  background: #eee;
+  background: #a1c3d1;
 }
 
 .waves {
@@ -66,6 +66,7 @@ html {
 }
 
 .box {
+  background: #a1c3d1;
   width: inherit;
   height: 100vh;
   background: #fbfcee;
@@ -141,13 +142,13 @@ html {
   text-transform: capitalize;
   letter-spacing: 0.05em;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 33vh;
+  margin-top: 25vh;
   padding-left: 10vw;
   font-family: "Lobster", cursive;
 }
 
 .title #typinghero {
-  color: #b39bc8;
+  color: #ad2e95;
   padding-left: 10vw;
   text-transform: uppercase;
   font-family: "MuseoSans-700";
@@ -172,6 +173,69 @@ html {
   from {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  margin-bottom: -10px;
+  background: linear-gradient(291deg, #3f63c5, #b39bc8);
+  background-size: 400% 400%;
+  -webkit-animation: bottomgradient 30s ease infinite;
+  animation: bottomgradient 30s ease infinite;
+}
+
+@-webkit-keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+.page-footer {
+  background: linear-gradient(291deg, #3f63c5, #b39bc8);
+  background-size: 400% 400%;
+  -webkit-animation: bottomgradient 30s ease infinite;
+  animation: bottomgradient 30s ease infinite;
+}
+
+@-webkit-keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
   }
 }
 /*# sourceMappingURL=style.css.map */

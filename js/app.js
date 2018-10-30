@@ -1,7 +1,9 @@
 $(function () {
     new TypeIt('#typinghero', {
-        strings: '-An Initiative by Team D_Coder',
-        speed: 50,
+        speed: 40,
+        startDelay: 1200,
+        loop: true,
+        loopDelay: 10000,
         autoStart: false
     });
 });

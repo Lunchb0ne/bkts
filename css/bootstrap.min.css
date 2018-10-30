@@ -34,7 +34,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "Lato", sans-serif;
+    --font-family-sans-serif: "Sharp Sans bold";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -9908,7 +9908,6 @@ a.text-dark:hover {
 .portfolio-block .heading h2 {
     font-weight: 700;
     font-size: 1.4rem;
-    text-transform: uppercase
 }
 
 .portfolio-block .heading p {

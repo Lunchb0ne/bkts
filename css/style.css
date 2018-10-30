@@ -44,6 +44,12 @@
   src: url("./fonts/Anurati-Regular.otf");
 }
 
+@media only screen and (min-width: 768px) {
+  .vertical-center {
+    padding-top: 30vw;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -124,6 +130,15 @@ html {
   font-size: 40px;
   text-align: center;
 }*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sharp Sans bold' !important;
+}
+
 .title {
   left: 0;
   top: 0;
@@ -143,7 +158,6 @@ html {
   text-transform: capitalize;
   letter-spacing: 0.05em;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 33.33333vh;
   padding-left: 10vw;
   font-family: "Sharp Sans bold";
 }
@@ -152,6 +166,10 @@ html {
   color: #C7C6CA;
   padding-left: 10vw;
   font-family: "MuseoSans-500";
+}
+
+.vertical-center {
+  padding-top: 20vh;
 }
 
 .gradient {
@@ -211,6 +229,46 @@ html {
 }
 
 @keyframes bottomgradient {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+.portfolio-block {
+  font-family: 'MuseoSans-300';
+}
+
+.portfolio-block .h1 {
+  font-family: 'Sharp Sans bold';
+}
+
+.alt-grad {
+  font-family: 'MuseoSans-300';
+  background: linear-gradient(291deg, #F7EBFF, #00C8A0);
+  background-size: 400% 400%;
+  -webkit-animation: alt-grad 30s ease infinite;
+  animation: alt-grad 30s ease infinite;
+}
+
+@-webkit-keyframes alt-grad {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes alt-grad {
   0% {
     background-position: 0% 39%;
   }

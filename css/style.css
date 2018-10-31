@@ -280,4 +280,36 @@ h6 {
     background-position: 0% 39%;
   }
 }
+
+.nalt-grad {
+  font-family: 'MuseoSans-300';
+  background: linear-gradient(291deg, #F7EBFF, #B597FF);
+  background-size: 400% 400%;
+  -webkit-animation: nalt-grad 30s ease infinite;
+  animation: nalt-grad 30s ease infinite;
+}
+
+@-webkit-keyframes nalt-grad {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
+
+@keyframes nalt-grad {
+  0% {
+    background-position: 0% 39%;
+  }
+  50% {
+    background-position: 100% 62%;
+  }
+  100% {
+    background-position: 0% 39%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
